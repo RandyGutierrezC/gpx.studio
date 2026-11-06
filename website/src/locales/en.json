@@ -7,6 +7,28 @@
         "404_title": "page not found",
         "description": "View, edit, and create GPX files online with advanced route planning capabilities and file processing tools, beautiful maps and detailed data visualizations."
     },
+    "share": {
+        "title": "Share route as PDF",
+        "description": "A printable sheet with the complete route, its statistics and elevation profile.",
+        "instructions": "Choose “Save as PDF” in the print dialog to download your route sheet.",
+        "save": "Save as PDF",
+        "sheet": "ROUTE SHEET",
+        "ascent": "Elevation gain",
+        "descent": "Elevation loss",
+        "map": "Map of the complete route",
+        "loading": "Preparing route map…",
+        "map_error": "Could not prepare the map. Check your connection and try again.",
+        "print_error": "Could not open printing. Please try again.",
+        "retry": "Try again",
+        "start": "Start",
+        "finish": "Finish",
+        "no_elevation": "This route has no elevation data.",
+        "footer": "Complete route · Created with gpx.studio",
+        "route": "Route",
+        "untitled": "Untitled route",
+        "empty": "Select a route with track points to create a PDF.",
+        "close": "Close"
+    },
     "menu": {
         "new": "New",
         "new_file": "New file",

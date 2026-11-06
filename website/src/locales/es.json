@@ -7,6 +7,28 @@
         "404_title": "página no encontrada",
         "description": "Visualiza, edita y crea archivos GPX online con planificación avanzada de rutas y herramientas de procesamiento de archivos, bonitos mapas y visualizaciones detalladas de datos."
     },
+    "share": {
+        "title": "Compartir ruta como PDF",
+        "description": "Una ficha para imprimir con la ruta completa, sus estadísticas y el perfil de elevación.",
+        "instructions": "Elegí «Guardar como PDF» en el diálogo de impresión para descargar la ficha de tu ruta.",
+        "save": "Guardar como PDF",
+        "sheet": "FICHA DE RUTA",
+        "ascent": "Desnivel positivo",
+        "descent": "Desnivel negativo",
+        "map": "Mapa de la ruta completa",
+        "loading": "Preparando el mapa de la ruta…",
+        "map_error": "No se pudo preparar el mapa. Revisá tu conexión e intentá de nuevo.",
+        "print_error": "No se pudo abrir la impresión. Intentá de nuevo.",
+        "retry": "Reintentar",
+        "start": "Inicio",
+        "finish": "Llegada",
+        "no_elevation": "Esta ruta no tiene datos de elevación.",
+        "footer": "Ruta completa · Creada con gpx.studio",
+        "route": "Ruta",
+        "untitled": "Ruta sin nombre",
+        "empty": "Seleccioná una ruta con puntos de recorrido para crear un PDF.",
+        "close": "Cerrar"
+    },
     "menu": {
         "new": "Nuevo",
         "new_file": "Nuevo archivo",

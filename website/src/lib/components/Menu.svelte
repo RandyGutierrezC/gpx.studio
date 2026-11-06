@@ -45,6 +45,7 @@
         Maximize,
         Maximize2,
         Minimize2,
+        Share2,
     } from '@lucide/svelte';
     import { map } from '$lib/components/map/map';
     import { editMetadata } from '$lib/components/file-list/metadata/utils.svelte';
@@ -55,6 +56,7 @@
     import LayerControlSettings from '$lib/components/map/layer-control/LayerControlSettings.svelte';
     import { ListFileItem, ListTrackItem } from '$lib/components/file-list/file-list';
     import Export from '$lib/components/export/Export.svelte';
+    import ShareRoute from '$lib/components/share/ShareRoute.svelte';
     import { mode, setMode } from 'mode-watcher';
     import { i18n } from '$lib/i18n.svelte';
     import { languages } from '$lib/languages';
@@ -108,6 +110,7 @@
 
     let layerSettingsOpen = $state(false);
     let fullscreen = $state(false);
+    let shareOpen = $state(false);
 
     function toggleFullscreen() {
         if (!document.fullscreenElement) {
@@ -194,6 +197,13 @@
                         <Download size="16" />
                         {i18n._('menu.export_all')}
                         <Shortcut key="S" ctrl={true} shift={true} />
+                    </Menubar.Item>
+                    <Menubar.Item
+                        onclick={() => (shareOpen = true)}
+                        disabled={$selection.size === 0}
+                    >
+                        <Share2 size="16" />
+                        {i18n._('share.title', 'Share route as PDF')}
                     </Menubar.Item>
                 </Menubar.Content>
             </Menubar.Menu>
@@ -560,6 +570,7 @@
 </div>
 
 <Export />
+<ShareRoute bind:open={shareOpen} />
 <LayerControlSettings bind:open={layerSettingsOpen} />
 
 <svelte:window

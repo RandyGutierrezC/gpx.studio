@@ -1,0 +1,125 @@
+.route-sheet {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 28px;
+    background: #fff;
+    color: #172b28;
+    font:
+        14px/1.5 Arial,
+        sans-serif;
+}
+.route-sheet * {
+    box-sizing: border-box;
+}
+.route-sheet .sheet-brand {
+    color: #347768;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+.route-sheet h1 {
+    margin: 6px 0 20px;
+    font-size: 28px;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+}
+.route-sheet .sheet-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.route-sheet .sheet-stat {
+    padding: 12px 0;
+    border-top: 1px solid #dce5e2;
+}
+.route-sheet .sheet-stat strong {
+    display: block;
+    font-size: 22px;
+}
+.route-sheet .sheet-stat span {
+    color: #536762;
+    font-size: 12px;
+}
+.route-sheet .sheet-map {
+    display: block;
+    width: 100%;
+    aspect-ratio: 25 / 14;
+    border: 1px solid #dce5e2;
+    border-radius: 8px;
+}
+.route-sheet .sheet-attribution {
+    margin: 4px 0;
+    font-size: 9px;
+    color: #536762;
+}
+.route-sheet .sheet-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    margin: 10px 0 18px;
+    font-size: 12px;
+}
+.route-sheet .sheet-legend b {
+    display: inline-grid;
+    place-items: center;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    color: white;
+    background: #147d64;
+}
+.route-sheet .sheet-legend .sheet-end {
+    background: #b93e4c;
+}
+.route-sheet h2 {
+    font-size: 14px;
+    margin: 16px 0 8px;
+}
+.route-sheet .sheet-profile {
+    width: 100%;
+    display: block;
+}
+.route-sheet .sheet-note {
+    color: #536762;
+    font-size: 12px;
+}
+.route-sheet footer {
+    margin-top: 18px;
+    padding-top: 10px;
+    border-top: 1px solid #dce5e2;
+    color: #536762;
+    font-size: 11px;
+}
+@media (max-width: 520px) {
+    .route-sheet {
+        padding: 16px;
+    }
+    .route-sheet h1 {
+        font-size: 23px;
+    }
+    .route-sheet .sheet-stat strong {
+        font-size: 18px;
+    }
+}
+@media print {
+    @page {
+        size: A4 portrait;
+        margin: 12mm;
+    }
+    html,
+    body {
+        margin: 0;
+        background: white;
+    }
+    .route-sheet {
+        padding: 0;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+    }
+    .route-sheet .sheet-stats,
+    .route-sheet .sheet-map,
+    .route-sheet .sheet-profile {
+        break-inside: avoid;
+    }
+}
